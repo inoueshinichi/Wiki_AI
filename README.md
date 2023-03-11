@@ -12,6 +12,8 @@ Summary of AI trend
 | Optimizer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
 | Normalization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
 | Attention | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
+| CNN | | 
+| Pooling | |
 | Residual Block | |
 | Backborn models | |
 | Specialized models | |
