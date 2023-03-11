@@ -15,9 +15,12 @@ Summary of AI trend
 | CNN | | 
 | Pooling | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
 | Residual Block | |
-| Backborn models | |
-| Specialized models | |
-| Preprint models | | 
-| Models | |
+| Backborn Models | |
+| Specialized Models | |
+| Preprint Models | | 
+| Image Models | |
+| NLP Models | |
+| Visual and Language Models | |
+| Video Models | | 
 
 
