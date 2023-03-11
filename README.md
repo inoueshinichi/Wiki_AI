@@ -6,7 +6,7 @@ Summary of AI trend
 | :-- | :-- |
 | Training Style | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style |
 | Dataset | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset |
-| Augmentation | |
+| Data Augmentation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Data_Augmentation |
 | Activation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
 | Loss | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Loss |
 | Optimizer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
