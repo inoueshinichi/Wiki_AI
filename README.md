@@ -2,6 +2,7 @@
 Summary of AI trend
 
 ### List of AI components
+0. Training Style
 1. Dataset
 2. Augmentation
 3. Activation
@@ -12,6 +13,7 @@ Summary of AI trend
 
 | Name | URL |
 | :-- | :-- |
+| Training Style | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style |
 | Dataset | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset |
 | Augmentation | |
 | Activation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
