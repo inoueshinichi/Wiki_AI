@@ -16,12 +16,10 @@ Summary of AI trend
 | Pooling | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
 | Residual Block | |
 | Backborn Models | |
-| Specialized Models | |
-| Preprint Models | | 
 | Image Classify Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
 | Object Detection Models | |
 | NLP Models | |
 | Video Models | |
 | Visual and Language Models | |
-
-
+| Preprint Models | | 
+| Specialized Models | |
