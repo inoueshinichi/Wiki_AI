@@ -18,7 +18,9 @@ Summary of AI trend
 | Augmentation | |
 | Activation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
 | Loss | |
-| Key modules | |
+| Normalization | |
+| Attention | |
+| Residual Block | |
 | Backborn models | |
 | Specialized models | |
 
