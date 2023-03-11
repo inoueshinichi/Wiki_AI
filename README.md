@@ -9,7 +9,7 @@ Summary of AI trend
 | Augmentation | |
 | Activation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
 | Loss | |
-| Optimizer | | 
+| Optimizer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
 | Normalization | |
 | Attention | |
 | Residual Block | |
