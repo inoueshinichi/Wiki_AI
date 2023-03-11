@@ -1,4 +1,4 @@
-# Wiki_AI
+# Wiki_AI_Summary
 Summary of AI trend
 
 ### List of AI components
