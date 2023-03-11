@@ -8,7 +8,7 @@ Summary of AI trend
 | Dataset | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset |
 | Augmentation | |
 | Activation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
-| Loss | |
+| Loss | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Loss |
 | Optimizer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
 | Normalization | |
 | Attention | |
