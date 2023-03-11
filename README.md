@@ -18,7 +18,7 @@ Summary of AI trend
 | Backborn Models | |
 | Specialized Models | |
 | Preprint Models | | 
-| Image Classify Models | |
+| Image Classify Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
 | Object Detection Models | |
 | NLP Models | |
 | Video Models | |
