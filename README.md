@@ -18,7 +18,7 @@ Summary of AI trend
 | Backborn Models | |
 | Image Classify Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
 | Object Detection Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
-| NLP Models | |
+| NLP Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_NLP_Models |
 | Generative Models | |
 | Video Models | |
 | Visual and Language Models | |
