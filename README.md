@@ -17,7 +17,7 @@ Summary of AI trend
 | Residual Block | |
 | Backborn Models | |
 | Image Classify Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
-| Object Detection Models | |
+| Object Detection Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
 | NLP Models | |
 | Video Models | |
 | Visual and Language Models | |
