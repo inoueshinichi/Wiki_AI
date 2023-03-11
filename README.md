@@ -21,6 +21,6 @@ Summary of AI trend
 | NLP Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_NLP_Models |
 | Generative Models | |
 | Video Models | |
-| Visual and Language Models | |
+| Vision and Language Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Vision_And_Language_Models |
 | Preprint Models | | 
 | Specialized Models | |
