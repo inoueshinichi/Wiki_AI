@@ -17,5 +17,6 @@ Summary of AI trend
 | Residual Block | |
 | Backborn models | |
 | Specialized models | |
+| Preprint models | | 
 
 
