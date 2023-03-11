@@ -11,7 +11,7 @@ Summary of AI trend
 | Loss | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Loss |
 | Optimizer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
 | Normalization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
-| Attention | |
+| Attention | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
 | Residual Block | |
 | Backborn models | |
 | Specialized models | |
