@@ -14,7 +14,7 @@ Summary of AI trend
 | Attention | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
 | CNN | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_CNN | 
 | Pooling | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
-| Residual Block | |
+| Residual Block | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Residual_Block |
 | Backborn Models | |
 | Image Classify Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
 | Object Detection Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
