@@ -18,9 +18,10 @@ Summary of AI trend
 | Backborn Models | |
 | Specialized Models | |
 | Preprint Models | | 
-| Image Models | |
+| Image Classify Models | |
+| Object Detection Models | |
 | NLP Models | |
+| Video Models | |
 | Visual and Language Models | |
-| Video Models | | 
 
 
