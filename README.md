@@ -3,15 +3,17 @@ Summary of AI trend
 
 ### List of AI components
 1. Dataset
-2. Activation
-3. Loss
-4. Key modules
-5. Backborn models
-6. Specialized models
+2. Augmentation
+3. Activation
+4. Loss
+5. Key modules
+6. Backborn models
+7. Specialized models
 
 | Name | URL |
 | :-- | :-- |
 | Dataset | |
+| Augmentation | |
 | Activation | |
 | Loss | |
 | Key modules | |
