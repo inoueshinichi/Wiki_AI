@@ -18,5 +18,6 @@ Summary of AI trend
 | Backborn models | |
 | Specialized models | |
 | Preprint models | | 
+| Models | |
 
 
