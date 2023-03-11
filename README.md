@@ -12,9 +12,9 @@ Summary of AI trend
 
 | Name | URL |
 | :-- | :-- |
-| Dataset | |
+| Dataset | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset |
 | Augmentation | |
-| Activation | |
+| Activation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
 | Loss | |
 | Key modules | |
 | Backborn models | |
