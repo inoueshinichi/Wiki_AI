@@ -2,6 +2,9 @@
 Summary of AI trend
 
 ### Memo of Pytorch
++ dataset https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_dataset
++ datasetloader https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_datasetloader
++ module https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_module
 
 
 ### List of AI components
