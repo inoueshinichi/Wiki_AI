@@ -1,6 +1,9 @@
 # Wiki_AI_Summary
 Summary of AI trend
 
+### Memo of Pytorch
+
+
 ### List of AI components
 | Name | URL |
 | :-- | :-- |
