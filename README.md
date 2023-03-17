@@ -19,6 +19,7 @@ Summary of AI trend
 | Optimizer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
 | Regularization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Regularization |
 | Normalization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
+| Linear | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Linear |
 | Attention | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
 | Convolution |https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Convolution | 
 | Pooling | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
