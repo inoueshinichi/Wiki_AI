@@ -14,17 +14,17 @@ Summary of AI trend
 | Training Style | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style |
 | Dataset | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset |
 | Data Augmentation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Data_Augmentation |
-| Activation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
-| Loss | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Loss |
+| Activation* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
+| Loss* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Loss |
 | Optimizer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
 | Regularization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Regularization |
-| Normalization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
+| Normalization* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
 | Linear | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Linear |
 | Dropout | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dropout |
-| Attention | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
+| Attention* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
 | Convolution |https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Convolution | 
 | Pooling | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
-| Skip Connection | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Skip_Connection |
+| Skip Connection* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Skip_Connection |
 | Image Classify Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
 | Object Detection Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
 | NLP Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_NLP_Models |
