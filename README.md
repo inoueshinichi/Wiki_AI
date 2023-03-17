@@ -24,7 +24,7 @@ Summary of AI trend
 | Attention | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
 | Convolution |https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Convolution | 
 | Pooling | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
-| Skip Connection and Residual Block | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Residual_Block |
+| Skip Connection | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Skip_Connection |
 | Image Classify Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
 | Object Detection Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
 | NLP Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_NLP_Models |
