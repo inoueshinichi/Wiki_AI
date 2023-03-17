@@ -20,7 +20,7 @@ Summary of AI trend
 | Regularization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Regularization |
 | Normalization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
 | Attention | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
-| CNN | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_CNN | 
+| Convolution | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_CNN | 
 | Pooling | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
 | Residual Block | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Residual_Block |
 | Backborn Models | |
