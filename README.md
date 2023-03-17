@@ -5,6 +5,7 @@ Summary of AI trend
 + dataset https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_dataset
 + datasetloader https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_datasetloader
 + module https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_module
++ device(cpu or gpu) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_cpu_gpu
 
 
 ### List of AI components
