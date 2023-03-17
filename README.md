@@ -16,6 +16,7 @@ Summary of AI trend
 | Activation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
 | Loss | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Loss |
 | Optimizer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
+| Regularization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Regularization |
 | Normalization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
 | Attention | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
 | CNN | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_CNN | 
