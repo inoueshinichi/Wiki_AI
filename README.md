@@ -7,6 +7,7 @@ Summary of AI trend
 + datasetloader https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_datasetloader
 + module https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_module
 + device(cpu, cuda-gpu) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_cpu_gpu
++ tensorboard https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_tensorboard
 + deploy (ONNX, TorchScript, Trace, C++ libtorch) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_deploy
 
 
