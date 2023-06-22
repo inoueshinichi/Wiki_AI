@@ -1,5 +1,6 @@
 # Wiki_AI_Summary
-Summary of AI trend
+
+## My survey about DL basic component and various task models
 
 ### Memo of Pytorch
 + メモ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_memo
