@@ -65,12 +65,12 @@ Summary of AI trend
 ### タスク別モデル
 | Name | URL |
 | :-- | :-- |
-| Image | |
-| NPL | |
-| V&L | |
-| GAN | |
-| Skelton | |
-| Video | |
+| Image | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Image |
+| NPL | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_NPL |
+| V&L | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_V&L |
+| GAN | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_GAN |
+| Skelton | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Skelton |
+| Video | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Video |
 
 
 | Image Classification | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
