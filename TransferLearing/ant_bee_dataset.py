@@ -5,7 +5,7 @@ import sys
 
 # os.sepはプラットフォーム固有の区切り文字(Windows: `\`, Unix: `/`)
 module_parent_dir = os.sep.join([os.path.dirname(__file__), '..'])
-print("module_parent_dir", module_parent_dir)
+# print("module_parent_dir", module_parent_dir)
 sys.path.append(module_parent_dir)
 
 from log_conf import logging
@@ -44,17 +44,17 @@ from .preprocess import ImageTransform
 # アリとハチの画像へのファイルパスのリストを作成する
 def make_datapath_list(phase : str = 'train'):
 
-    rootpath = f"{os.path.dirname(__file__)}/data/hymenoptera_data/archive/hymenoptera/"
+    rootpath = f"{os.path.dirname(__file__)}/data/hymenoptera_data/"
     target_path = osp.join(rootpath + phase + '/**/*.jpg')
-    print(target_path)
+    # print(target_path)
 
     # ファイルパスを取得
     path_list = []
     for path in glob.glob(target_path):
         path_list.append(path)
 
-    for i, path in enumerate(path_list):
-        print(str(i) + ": " +  path)
+    # for i, path in enumerate(path_list):
+    #     print(str(i) + ": " +  path)
 
     return path_list
 
@@ -79,21 +79,25 @@ class HymenopteraDataset(data.Dataset):
     def __getitem__(self, index):
 
         img_path = self.file_list[index]
+        # print('img_path:', img_path)
         img = Image.open(img_path)
 
         img_transformed = self.transform(img, self.phase) # torch.Size([3, 224, 224])
 
-        label : str
         if self.phase == 'train':
             label = img_path[30:34]
         elif self.phase == 'val':
             label = img_path[28:32]
 
-        label_t : Any = None
+        label = img_path.split(os.sep)[-2] # ants / bees
+
+        label_t = torch.zeros((2,), dtype=torch.float32)
         if label == 'ants':
-            label_t = torch.tensor(0, dtype=torch.long)
+            label_t[0] = 1
         elif label == 'bees':
-            label_t = torch.tensor(1, dtype=torch.float)
+            label_t[1] = 1
+        else:
+            raise ValueError(f'{label} is invalid.')
 
         return img_transformed, label_t
     

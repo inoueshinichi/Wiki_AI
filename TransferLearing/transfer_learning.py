@@ -7,7 +7,7 @@ from traitlets import default
 
 # os.sepはプラットフォーム固有の区切り文字(Windows: `\`, Unix: `/`)
 module_parent_dir = os.sep.join([os.path.dirname(__file__), '..'])
-print("module_parent_dir", module_parent_dir)
+# print("module_parent_dir", module_parent_dir)
 sys.path.append(module_parent_dir)
 
 from log_conf import logging
@@ -47,16 +47,16 @@ from .preprocess import ImageTransform
 from .ant_bee_dataset import HymenopteraDataset, make_hymenoptera_dataset
 from enum_with_estimate import enumerate_with_estimate
 
-METRICS_LABEL_NDX = 0
+METRICS_LABEL_NDX = 0 # アリ:1, ハチ:2
 METRICS_POS_PRED_NDX = 1 # アリの尤度
 METRICS_NEG_PRED_NDX = 2 # ハチの尤度
-METRICS_FT_LOSS_NDX = 3 # ラベル: 陰性, 推論: 陽性 (過検出)
+METRICS_FP_LOSS_NDX = 3 # ラベル: 陰性, 推論: 陽性 (過検出)
 METRICS_FN_LOSS_NDX = 4 # ラベル: 陽性, 推論: 陰性 (見逃し)
 METRICS_ALL_LOSS_NDX = 5 # 全損失
 METRICS_FP_NDX = 6 # 偽陽性
 METRICS_TP_NDX = 7 # 真陽性
 METRICS_FN_NDX = 8 # 偽陰性
-METRICS_FP_NDX = 9 # 真陰性
+METRICS_TN_NDX = 9 # 真陰性
 METRICS_SIZE = 10 # 配列の行数
 
 class TransferLearningApp:
@@ -74,12 +74,22 @@ class TransferLearningApp:
                             )
         parser.add_argument('--num-workers',
                             help='Number of worker processes for background data loading.',
-                            default=2,
+                            default=4,
                             type=int,
                             )
         parser.add_argument('--epochs',
                             help='Number of epochs to train for',
                             default=1,
+                            type=int,
+                            )
+        parser.add_argument('--threshold',
+                            help='Classification threshold.',
+                            default=0.5,
+                            type=float,
+                            )
+        parser.add_argument('--seed',
+                            help='Random seed',
+                            default=1234,
                             type=int,
                             )
         
@@ -94,6 +104,11 @@ class TransferLearningApp:
                             default=tb_logdir,
                             help='Log directory of Tensorbard.',
                             )
+        parser.add_argument('comment',
+            help='Comment suffix for Tensorboard run',
+            nargs='?',
+            default='dwlpt',
+        )
 
         # Save Model Directory
         save_modeldir = "models"
@@ -119,11 +134,15 @@ class TransferLearningApp:
         self.use_cuda = torch.cuda.is_available()
         self.device = torch.device('cuda' if self.use_cuda else 'cpu')
 
+        self.classes_dict = {
+            'ants' : 1,
+            'bees' : 2,
+        }
 
         # 乱数シード (共通)
-        torch.manual_seed(1234)
-        np.random.seed(1234)
-        random.seed(1234)
+        torch.manual_seed(self.cli_args.seed)
+        np.random.seed(self.cli_args.seed)
+        random.seed(self.cli_args.seed)
 
         self.trn_writer = None
         self.val_writer = None
@@ -219,8 +238,7 @@ class TransferLearningApp:
 
         # 訓練データの計測データ用配列データ
         trn_metrics_g = torch.zeros(
-            METRICS_SIZE,
-            len(trn_dl.dataset),
+            (METRICS_SIZE, len(trn_dl.dataset)),
             device=self.device,
         )
 
@@ -250,6 +268,8 @@ class TransferLearningApp:
 
         self.total_training_samples_count += len(trn_dl.dataset)
 
+        return trn_metrics_g.to('cpu')
+
     def compute_batch_loss(self, 
                            batch_ndx, 
                            batch_tup, 
@@ -263,6 +283,10 @@ class TransferLearningApp:
 
         logits_g = self.model(input_g) # (score, socre)
 
+        print('----- check -----')
+        print('input_g.size', input_g.size())
+        print('label_g.size', label_g.size())
+
         # reduction='none'でサンプル毎の損失を計算
         loss_func = nn.CrossEntropyLoss(reduction='none')
         loss_g = loss_func(
@@ -271,14 +295,33 @@ class TransferLearningApp:
         )
 
         probability_g = nn.Softmax(dim=-1)(logits_g)
+        print('probability_g.size', probability_g.size())
 
         start_ndx = batch_ndx * batch_size
         end_ndx = start_ndx + label_t.size(0) # ミニバッチ数(端数あり)
 
-        # 勾配を必要とする指標がないのでデタッチして, 計算グラフから切り離す.
-        metrics_g[METRICS_LABEL_NDX, start_ndx:end_ndx] = label_g.detach()
+        """勾配を必要とする指標がないのでデタッチして, 計算グラフから切り離す."""
+        # Label
+        metrics_g[METRICS_LABEL_NDX, start_ndx:end_ndx] = np.where(label_g[:,0].detach() == 0, 
+                                                                   self.classes_dict['ants'], 
+                                                                   self.classes_dict['bees']) # ants: 1, bees:2
+        # Predict
         metrics_g[METRICS_POS_PRED_NDX, start_ndx:end_ndx] = probability_g[:,0].detach()
         metrics_g[METRICS_NEG_PRED_NDX, start_ndx:end_ndx] = probability_g[:,1].detach()
+
+        # Mask
+        pos_label_mask = metrics_g[METRICS_LABEL_NDX] == self.classes_dict['ants']
+        pos_pred_mask = metrics_g[METRICS_POS_PRED_NDX] > self.cli_args.threshold # predict ants
+        neg_pred_mask = ~pos_pred_mask # predict bees
+        neg_label_mask = ~pos_label_mask #  bees
+
+        # Metrics
+        metrics_g[METRICS_TP_NDX, start_ndx:end_ndx] = pos_label_mask & pos_pred_mask
+        metrics_g[METRICS_FN_NDX, start_ndx:end_ndx] = pos_label_mask & ~pos_pred_mask
+        metrics_g[METRICS_TN_NDX, start_ndx:end_ndx] = neg_label_mask & neg_pred_mask
+        metrics_g[METRICS_FN_NDX, start_ndx:end_ndx] = neg_label_mask & ~neg_pred_mask
+        
+        # Loss
         metrics_g[METRICS_ALL_LOSS_NDX, start_ndx:end_ndx] = loss_g.detach()
 
         return loss_g.mean() # サンプル毎の損失を1バッチ分に平均化
@@ -290,8 +333,7 @@ class TransferLearningApp:
         with torch.no_grad():
             
             val_metrics_g = torch.zeros(
-                METRICS_SIZE,
-                len(val_dl.dataset),
+                (METRICS_SIZE, len(val_dl.dataset)),
                 device=self.device,
                 )
             
@@ -329,7 +371,7 @@ class TransferLearningApp:
 
         for epoch_ndx in range(1, self.cli_args.epochs + 1):
 
-            log.info("Epoch {} of {}, {}/{} batches of size {}*{}".format(
+            log.info("Epoch {} of {}, [trn]{}/[val]{} batches of size {}*{}".format(
                 epoch_ndx,
                 self.cli_args.epochs,
                 len(trn_dl),
@@ -351,7 +393,7 @@ class TransferLearningApp:
 
         if hasattr(self, 'trn_writer'):
             self.trn_writer.close()
-            self.val_wirter.close()
+            self.val_writer.close()
 
     
     def log_metrics(self, 
@@ -365,17 +407,17 @@ class TransferLearningApp:
         ))
 
         metrics_a = metrics_t.detach().numpy()
-        sum_a = metrics_a.sum(axis=1)
+        sum_a = metrics_a.sum(axis=1) # 行方向に加算
         assert np.isfinite(metrics_a).all()
 
         all_label_count = sum_a[METRICS_TP_NDX] + sum_a[METRICS_FN_NDX]
 
         metrics_dict = {}
         metrics_dict['loss/all'] = metrics_a[METRICS_ALL_LOSS_NDX].mean()
-
         metrics_dict['percent_all/tp'] = sum_a[METRICS_TP_NDX] / (all_label_count or 1) * 100
         metrics_dict['percent_all/fn'] = sum_a[METRICS_FN_NDX] / (all_label_count or 1) * 100
         metrics_dict['percent_all/fp'] = sum_a[METRICS_FP_NDX] / (all_label_count or 1) * 100
+        metrics_dict['percent_all/tn'] = sum_a[METRICS_TN_NDX] / (all_label_count or 1) * 100
 
         precision = metrics_dict['pr/precision'] = sum_a[METRICS_TP_NDX] / ((sum_a[METRICS_TP_NDX] + sum_a[METRICS_FP_NDX]) or 1)
         recall = metrics_dict['pr/recall'] = sum_a[METRICS_TP_NDX] / ((sum_a[METRICS_TP_NDX] + sum_a[METRICS_FN_NDX]) or 1)
