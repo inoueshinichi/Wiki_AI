@@ -1,5 +1,6 @@
-"""ユーティリティ
+"""終了時刻予想付きのジェネレータ
 """
+
 import os
 import sys
 
@@ -8,37 +9,24 @@ module_parent_dir = os.sep.join([os.path.dirname(__file__), '..'])
 print("module_parent_dir", module_parent_dir)
 sys.path.append(module_parent_dir)
 
-from .log_conf import logging
-
+from log_conf import logging
 log = logging.getLogger(__name__)
 # log.setLevel(logging.WARN)
 # log.setLevel(logging.INFO)
 log.setLevel(logging.DEBUG)
 
-import datetime
 import time
+import datetime
 
+from type_hint import *
 
-def test_name_deco(f):
-    def _wrapper(*args, **kargs):
-
-        print(f"{datetime.datetime.now()} [Start] {f.__name__}")
-
-        v = f(*args, **kargs)
-
-        print(f"{datetime.datetime.now()} [End] {f.__name__}")
-
-        return v
-    
-    return _wrapper
-
-def enumerateWithEstimate(
-        iter,
-        desc_str,
-        start_ndx=0,
-        print_ndx=4,
-        backoff=None,
-        iter_len=None,
+def enumerate_with_estimate(
+        iter : Iterable,
+        desc_str : str,
+        start_ndx : int = 0,
+        print_ndx : int = 4,
+        backoff : Optional[int] = None,
+        iter_len : Optional[int] = None,
 ):
     """
     In terms of behavior, `enumerateWithEstimate` is almost identical
@@ -143,3 +131,4 @@ def enumerateWithEstimate(
         iter_len,
         str(datetime.datetime.now()).rsplit('.', 1)[0],
     ))
+

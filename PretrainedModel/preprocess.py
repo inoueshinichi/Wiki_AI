@@ -3,6 +3,8 @@
 import os
 import sys
 
+from matplotlib.dates import TU
+
 # os.sepはプラットフォーム固有の区切り文字(Windows: `\`, Unix: `/`)
 module_parent_dir = os.sep.join([os.path.dirname(__file__), '..'])
 print("module_parent_dir", module_parent_dir)
@@ -35,7 +37,11 @@ from type_hint import *
 # 224 x 224 リサイズ
 # 平均(0.485, 0.456, 0.406), 標準偏差(0.229, 0.224, 0.225)　規格化
 class BaseTransform():
-    def __init__(self, resize, mean, std):
+    def __init__(self, 
+                 resize : int, 
+                 mean : Tuple[float, float, float],
+                 std : Tuple[float, float, float],
+                 ):
         self.base_transform = transforms.Compose([
             transforms.Resize(resize),      # 画像の短辺が244になるようにリサイズ
             transforms.CenterCrop(resize),  # 画像中央を切り抜く(resize x resize)
