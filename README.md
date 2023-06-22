@@ -59,7 +59,7 @@ Summary of AI trend
 ### 特徴量抽出機構と識別機構(Backborn & Head)
 | Name | URL |
 | :-- | :-- |
-| Backboarn | |
+| Backboarn | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Backborn_Models |
 | Head | |
 
 ### タスク別モデル
