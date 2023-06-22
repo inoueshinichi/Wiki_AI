@@ -73,8 +73,6 @@ Summary of AI trend
 | Video | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Video |
 
 
-| Image Classification | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
-| Object Detection | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
 | NLP | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_NLP_Models |
 | V&L | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Vision_And_Language_Models |
 | GAN | |
