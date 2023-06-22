@@ -12,20 +12,9 @@
 + pytorch deploy (ONNX, TorchScript, Trace, C++ libtorch) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_deploy
 
 ### 学習形態
-| Name | URL |
-| :-- | :-- |
-| 転移学習 | |
-| Finetune | |
-| 半教師あり学習 | |
-| 自己教師あり学習 | |
-| 対照学習 | | 
 ＋　https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style
 
 #### データセット
-| Name | URL |
-| :-- | :-- |
-| VOC | |
-| MS COCO | |
 + https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset
 
 ### DL基本コンポーネント
