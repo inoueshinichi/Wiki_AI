@@ -63,8 +63,18 @@ Summary of AI trend
 | Head | |
 
 ### タスク別モデル
-| IC | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
-| OD | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
+| Name | URL |
+| :-- | :-- |
+| Image | |
+| NPL | |
+| V&L | |
+| GAN | |
+| Skelton | |
+| Video | |
+
+
+| Image Classification | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
+| Object Detection | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
 | NLP | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_NLP_Models |
 | V&L | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Vision_And_Language_Models |
 | GAN | |
