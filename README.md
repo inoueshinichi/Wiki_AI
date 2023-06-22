@@ -62,4 +62,6 @@
 | Skelton | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Skelton |
 | Video | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Video |
 | 3D | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_3D |
- 
+
+ ### 管理ツール
+ + Netron https://netron.app
