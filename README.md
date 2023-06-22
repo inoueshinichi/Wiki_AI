@@ -2,37 +2,71 @@
 Summary of AI trend
 
 ### Memo of Pytorch
-+ memo https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_memo
-+ dataset https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_dataset
-+ datasetloader https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_datasetloader
-+ module https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_module
-+ device(cpu, cuda-gpu) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_cpu_gpu
-+ tensorboard https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_tensorboard
-+ deploy (ONNX, TorchScript, Trace, C++ libtorch) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_deploy
++ メモ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_memo
++ pytorch_dataset https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_dataset
++ pytorch_dataloader https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_datasetloader
++ pytorch_module https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_module
++ pytorch_device(cpu, cuda-gpu) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_cpu_gpu
++ pytorch_tensorboard https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_tensorboard
++ pytorch deploy (ONNX, TorchScript, Trace, C++ libtorch) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_deploy
 
-
-### List of AI components
+### 学習形態
 | Name | URL |
 | :-- | :-- |
-| Training Style | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style |
-| Dataset | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset |
-| Data Augmentation | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Data_Augmentation |
-| Activation* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
-| Loss* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Loss |
-| Optimizer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
-| Regularization | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Regularization |
-| Normalization* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
-| Linear | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Linear |
-| Dropout | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dropout |
-| Attention* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
-| Convolution |https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Convolution | 
-| Pooling | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
-| Skip Connection* | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Skip_Connection |
-| Image Classify Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
-| Object Detection Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
-| NLP Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_NLP_Models |
-| Generative Models | |
-| Video Models | |
-| Vision and Language Models | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Vision_And_Language_Models |
-| Other Models | | 
-| Backborn and Head Models | |
+|　転移学習 | |
+| Finetune | |
+| 半教師あり学習 | |
+| 自己教師あり学習 | |
+| 対照学習 | | 
+＋　https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style
+
+#### データセット
+| Name | URL |
+| :-- | :-- |
+| VOC | |
+| MS COCO | |
++ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset |
+
+### DL基本コンポーネント
+| Name | URL |
+| :-- | :-- |
+| データ拡張 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Data_Augmentation |
+| 活性化関数 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Activation |
+| 損失関数 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Loss |
+| 最適化方策 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
+| 標準化 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Regularization |
+| 正規化 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
+| FCL | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Linear |
+| 注意機構 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
+| 畳み込み |https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Convolution | 
+| プーリング | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
+| スキップ接続 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Skip_Connection |
+
+### クラスバランス
+| Name | URL |
+| :-- | :-- |
+
+### 正則化
+| Name | URL |
+| :-- | :-- |
+| ドロップアウト | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dropout |
+| L1/L2ノルム(Weight Decay) | |
+| ラベル平均化 | |
+
+### 特徴量抽出機構と識別機構(Backborn & Head)
+| Name | URL |
+| :-- | :-- |
+| Backboarn | |
+| Head | |
+
+### タスク別モデル
+| IC | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Image_Classify_Models |
+| OD | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Object_Detection_Model |
+| NLP | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_NLP_Models |
+| V&L | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Vision_And_Language_Models |
+| GAN | |
+| Video | |
+| Skelton | | 
+
+
+
