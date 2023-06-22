@@ -4,12 +4,12 @@
 
 ### Pytorchに関するメモ
 + メモ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_memo
-+ pytorch_dataset https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_dataset
-+ pytorch_dataloader https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_datasetloader
-+ pytorch_module https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_module
-+ pytorch_device(cpu, cuda-gpu) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_cpu_gpu
-+ pytorch_tensorboard https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_tensorboard
-+ pytorch deploy (ONNX, TorchScript, Trace, C++ libtorch) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_deploy
++ Dataset https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_dataset
++ Dataloader https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_datasetloader
++ Module https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_module
++ Device(cpu, cuda-gpu) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_cpu_gpu
++ Tensorboard https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_tensorboard
++ Deploy (ONNX, TorchScript, Trace, C++ libtorch) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_deploy
 
 ### 学習形態
 ＋ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style
