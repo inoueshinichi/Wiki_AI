@@ -71,5 +71,5 @@ Summary of AI trend
 | GAN | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_GAN |
 | Skelton | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Skelton |
 | Video | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Video |
-| 3D | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_3D |
+| 3D | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_3D |
  
