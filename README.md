@@ -25,7 +25,7 @@ Summary of AI trend
 | :-- | :-- |
 | VOC | |
 | MS COCO | |
-+ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset |
++ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset
 
 ### DL基本コンポーネント
 | Name | URL |
