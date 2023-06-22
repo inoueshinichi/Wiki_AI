@@ -60,7 +60,7 @@ Summary of AI trend
 | Name | URL |
 | :-- | :-- |
 | Backboarn | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Backborn_Models |
-| Head | |
+| Head | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Head_Models |
 
 ### タスク別モデル
 | Name | URL |
