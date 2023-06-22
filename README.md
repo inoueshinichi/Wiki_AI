@@ -42,14 +42,14 @@ Summary of AI trend
 | プーリング | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
 | スキップ接続 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Skip_Connection |
 
-### クラスバランス
+### 学習時のクラスバランス調整
 | Name | URL |
 | :-- | :-- |
 | ミニバッチ内ラベルの均衡化 | |
 | 重み付き損失 | |
 
 
-### 正則化
+### 正則化(過学習を抑制)
 | Name | URL |
 | :-- | :-- |
 | ドロップアウト | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dropout |
