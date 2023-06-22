@@ -12,7 +12,7 @@
 + pytorch deploy (ONNX, TorchScript, Trace, C++ libtorch) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_deploy
 
 ### 学習形態
-＋　https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style
+＋ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style
 
 #### データセット
 + https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset
