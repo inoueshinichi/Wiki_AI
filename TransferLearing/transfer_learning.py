@@ -302,12 +302,12 @@ class TransferLearningApp:
 
         """勾配を必要とする指標がないのでデタッチして, 計算グラフから切り離す."""
         # Label
-        metrics_g[METRICS_LABEL_NDX, start_ndx:end_ndx] = np.where(label_g[:,0].detach() == 0, 
+        metrics_g[METRICS_LABEL_NDX, start_ndx:end_ndx] = np.where(label_g[:,0].detach().numpy() == 0, 
                                                                    self.classes_dict['ants'], 
                                                                    self.classes_dict['bees']) # ants: 1, bees:2
         # Predict
-        metrics_g[METRICS_POS_PRED_NDX, start_ndx:end_ndx] = probability_g[:,0].detach()
-        metrics_g[METRICS_NEG_PRED_NDX, start_ndx:end_ndx] = probability_g[:,1].detach()
+        metrics_g[METRICS_POS_PRED_NDX, start_ndx:end_ndx] = probability_g[:,0].detach().numpy()
+        metrics_g[METRICS_NEG_PRED_NDX, start_ndx:end_ndx] = probability_g[:,1].detach().numpy()
 
         # Mask
         pos_label_mask = metrics_g[METRICS_LABEL_NDX] == self.classes_dict['ants']
@@ -322,7 +322,7 @@ class TransferLearningApp:
         metrics_g[METRICS_FN_NDX, start_ndx:end_ndx] = neg_label_mask & ~neg_pred_mask
         
         # Loss
-        metrics_g[METRICS_ALL_LOSS_NDX, start_ndx:end_ndx] = loss_g.detach()
+        metrics_g[METRICS_ALL_LOSS_NDX, start_ndx:end_ndx] = loss_g.detach().numpy()
 
         return loss_g.mean() # サンプル毎の損失を1バッチ分に平均化
     
