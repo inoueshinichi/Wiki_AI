@@ -14,7 +14,7 @@
 ### 学習形態
 ＋ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style
 
-#### データセット
+### データセット
 + https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Dataset
 
 ### DL基本コンポーネント
@@ -37,7 +37,6 @@
 | :-- | :-- |
 | ミニバッチ内ラベルの均衡化 | |
 | 重み付き損失 | |
-
 
 ### 正則化(過学習を抑制)
 | Name | URL |
