@@ -40,7 +40,7 @@
 ### 学習時のクラスバランス調整
 | Name | URL |
 | :-- | :-- |
-| ミニバッチ内ラベルの均衡化 | |
+| ミニバッチ内ラベルの均衡化 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Balance_Label |
 | 重み付き損失 | |
 
 ### 正則化(過学習を抑制)
