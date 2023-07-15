@@ -68,4 +68,5 @@
 + Neural Network Console https://dl.sony.com/ja/
 
 ### 管理ツール
++ TensorBoard https://www.tensorflow.org/tensorboard?hl=ja
 + Netron https://netron.app
