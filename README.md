@@ -34,6 +34,7 @@
 | 畳み込み |https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Convolution | 
 | プーリング | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
 | スキップ接続 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Skip_Connection |
+| Embedding | | 
 | Transformer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Transformer |
 
 ### 学習時のクラスバランス調整
