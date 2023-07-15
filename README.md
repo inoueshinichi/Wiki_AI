@@ -61,5 +61,11 @@
 | Video | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Video |
 | 3D | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_3D |
 
- ### 管理ツール
- + Netron https://netron.app
+### 開発ツール
++ Pytorch https://pytorch.org
++ Tensorflow https://www.tensorflow.org/?hl=ja
++ Tensorflow-Lite https://www.tensorflow.org/lite?hl=ja
++ Neural Network Console https://dl.sony.com/ja/
+
+### 管理ツール
++ Netron https://netron.app
