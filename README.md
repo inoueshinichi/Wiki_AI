@@ -41,7 +41,7 @@
 | Name | URL |
 | :-- | :-- |
 | ミニバッチ内ラベルの均衡化 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Balance_Label |
-| 重み付き損失 | |
+| 重み付き損失 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Weight_Loss　|
 
 ### 正則化(過学習を抑制)
 | Name | URL |
