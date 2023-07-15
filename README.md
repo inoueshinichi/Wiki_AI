@@ -29,12 +29,12 @@
 | 最適化方策 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Optimizer | 
 | 標準化 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Regularization |
 | 正規化 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Normalization |
-| FCL | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Linear |
+| FCN(Linear) | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Linear |
 | 注意機構 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Attention |
 | 畳み込み |https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Convolution | 
 | プーリング | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Pooling |
 | スキップ接続 | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Skip_Connection |
-| Embedding | | 
+| Embedding | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Embedding | 
 | Transformer | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Transformer |
 
 ### 学習時のクラスバランス調整
