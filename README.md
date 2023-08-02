@@ -18,7 +18,7 @@
 + メモ 
 
 ### フレームワーク間のモデル変換
-+ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_to_tensorflowlite
++ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Framework_Model_Change
 
 ### 学習形態
 ＋ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style
