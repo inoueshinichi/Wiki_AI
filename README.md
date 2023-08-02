@@ -2,7 +2,7 @@
 
 ## My survey about DL basic component and various task models
 
-### Pytorchに関するメモ
+### Pytorchメモ
 + メモ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_memo
 + Dataset https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_dataset
 + Dataloader https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_datasetloader
@@ -11,10 +11,10 @@
 + Tensorboard https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_tensorboard
 + Deploy (ONNX, TorchScript, Trace, C++ libtorch) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_deploy
 
-### Tensorflowに関するメモ
+### Tensorflowメモ
 + メモ
 
-### Tensorflow Liteに関するメモ
+### Tensorflow Liteメモ
 + メモ 
 
 ### フレームワーク間のモデル変換
