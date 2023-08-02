@@ -16,7 +16,8 @@
 + v2.13.0 Python API https://www.tensorflow.org/api_docs/python/tf
 
 ### Tensorflow Liteメモ
-+ メモ 
++ tflite-runtime 2.13.0 https://pypi.org/project/tflite-runtime/
++ tflite-support 0.4.4 https://github.com/tensorflow/tflite-support
 
 ### フレームワーク間のモデル変換
 + https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Framework_Model_Change
