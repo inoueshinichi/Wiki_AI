@@ -17,7 +17,7 @@
 ### Tensorflow Liteに関するメモ
 + メモ 
 
-### Pytorchで作成したモデルをTensorflow Lite用モデルに変換する方法
+### フレームワーク間のモデル変換
 + https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_to_tensorflowlite
 
 ### 学習形態
