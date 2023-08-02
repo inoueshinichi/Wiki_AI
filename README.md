@@ -20,6 +20,7 @@
 + FlatBuffer(*.tflite) https://flatbuffers.dev
 + tflite-runtime v2.13.0 https://pypi.org/project/tflite-runtime/
 + tflite-support v0.4.4 https://github.com/tensorflow/tflite-support
++ 推論方法 https://www.tensorflow.org/lite/guide/inference?hl=ja
 
 ### フレームワーク間のモデル変換
 + https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Framework_Model_Change
