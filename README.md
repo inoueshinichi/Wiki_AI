@@ -3,7 +3,7 @@
 ## My survey about DL basic component and various task models
 
 ### Pytorchメモ
-+ v2.0.1 Python API https://pytorch.org/docs/stable/index.html
++ v2.0.0 Python API https://pytorch.org/docs/stable/index.html
 + メモ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_memo
 + Dataset https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_dataset
 + Dataloader https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_datasetloader
