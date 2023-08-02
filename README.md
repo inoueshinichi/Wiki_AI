@@ -11,6 +11,12 @@
 + Tensorboard https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_tensorboard
 + Deploy (ONNX, TorchScript, Trace, C++ libtorch) https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_deploy
 
+### Tensorflowに関するメモ
++ メモ
+
+### Tensorflow Liteに関するメモ
++ メモ 
+
 ### Pytorchで作成したモデルをTensorflow Lite用モデルに変換する方法
 + https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_pytorch_to_tensorflowlite
 
