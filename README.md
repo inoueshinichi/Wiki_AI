@@ -17,6 +17,7 @@
 + Tensorflow Liteは, 基本的に同じバージョンを使用すること
 
 ### Tensorflow Liteメモ
++ FlatBuffer(*.tflite) https://flatbuffers.dev
 + tflite-runtime v2.13.0 https://pypi.org/project/tflite-runtime/
 + tflite-support v0.4.4 https://github.com/tensorflow/tflite-support
 
