@@ -22,6 +22,9 @@
 + tflite-support v0.4.4 https://github.com/tensorflow/tflite-support
 + 推論方法 https://www.tensorflow.org/lite/guide/inference?hl=ja
 
+### Tensorflow Liteの使い方
++ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_TensorflowLiteの使い方
+
 ### フレームワーク間のモデル変換
 + https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Framework_Model_Change
 
