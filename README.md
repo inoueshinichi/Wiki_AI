@@ -28,6 +28,9 @@
 ### フレームワーク間のモデル変換
 + https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Framework_Model_Change
 
+### 関数の微分と連鎖律
++ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Defferencial_ChainRule
+
 ### 学習形態
 ＋ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Training_Style
 
@@ -80,8 +83,7 @@
 | Video | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Video |
 | 3D | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_3D |
 
-### 関数の微分と連鎖律
-+ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Defferencial_Chain
+
 
 ### 開発ツール
 + Pytorch https://pytorch.org
