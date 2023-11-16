@@ -80,6 +80,9 @@
 | Video | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_Video |
 | 3D | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_3D |
 
+### 関数の微分と連鎖律
+
+
 ### 開発ツール
 + Pytorch https://pytorch.org
 + Tensorflow https://www.tensorflow.org/?hl=ja
