@@ -81,7 +81,7 @@
 | 3D | https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Task_3D |
 
 ### 関数の微分と連鎖律
-
++ https://github.com/inoueshinichi/Wiki_AI/wiki/Wiki_Defferencial_Chain
 
 ### 開発ツール
 + Pytorch https://pytorch.org
